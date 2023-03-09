@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* -------- open -------- */
+.screenshot {
+  width: 1125px;
+  height: 2436px;
+  position: relative;
+}
+
+.screenshot img {
+  width: 100%;
+}
+
+.icon a {}
+
+.icon a img {
+  width: 172px;
+  height: 172px;
+  border-radius: 20%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1191px;
+  right: 348px;
+}
+
+
+/* -------- header -------- */
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #2B3467;
+  color: aliceblue;
+  position: relative;
+}
+
+.header img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .header h1 {
+    line-height: 80px;
+    text-align: center;
+  } */
+
+/* ------- lnb_menu -------- */
+#lnb_chk {
+  display: none;
+}
+
+#lnb_chk:checked~.lnb_ham_menu {
+  display: block;
+  z-index: 10;
+}
+
+#lnb_chk~.lnb_ham_menu {
+  display: none;
+}
+
+#lnb_chk:checked~.label .open_lnb {
+  display: none;
+}
+
+#lnb_chk:checked~.label .open_lnb {
+  display: block;
+}
+
+#lnb_chk~.label .open_lnb {
+  display: block;
+}
+
+#lnb_chk~.label .close_lnb {
+  display: none;
+}
+
+/* -------- label -------- */
+.label {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+.label label {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.lnb_ham_menu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.lnb_ham_menu li {
+  width: 100px;
+  height: 50px;
+  background-color: #1B2430;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.lnb_web_outer {
+  display: none;
+}
+
+.lnb_web_menu {
+  overflow: hidden;
+}
+
+.lnb_web_menu li {
+  width: 25%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background-color: #1B2430;
+  color: white;
+}
+
+/* ------- wrap -------- */
+.visual_main {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.visual_main img {
+  width: 100%;
+  display: block;
+}
+
+.reward {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.career {
+  width: 100%;
+}
+
+.KBO h1,
+.NPB h1 {
+  padding: 20px;
+  font-size: 45px;
+  font-style: italic;
+  text-align: center;
+  text-decoration: 5px underline wavy;
+}
+
+.KBO>ul,
+.NPB>ul,
+.KBO details ul {
+  height: auto;
+  text-align: center;
+  border-bottom: 1px dashed #ccc;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.KBO ul p,
+.NPB ul p {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 15px;
+  color: #222;
+}
+
+.KBO ul li,
+.NPB ul li {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.KBO details summary {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* ------- footer -------- */
+.footer {
+  width: 100%;
+  height: 30px;
+  background-color: #888;
+  bottom: 0;
+  position: fixed;
+  color: white;
+}
+
+.footer h4 {
+  line-height: 30px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* -------- media query -------- */
+@media all and (min-width:769px) {
+
+  .header .label,
+  .header .lnb_ham_menu {
+    display: none;
+  }
+
+  .lnb_web_outer {
+    display: block;
+  }
+
+  .visual_main {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  .KBO,
+  .NPB {
+    width: 49%;
+    float: left;
+    padding: 1px;
+    padding-bottom: 30px;
+  }
+
+  .KBO {
+    border-right: 1px #999 dashed;
+  }
+
+  .article img {
+    display: none;
+  }
+
+  .aside {
+    margin: 0 auto;
+  }
+
+}
+
+
+@media all and (min-width:1025px) {
+
+  .header,
+  .wrap,
+  .footer,
+  .lnb_web_menu {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .header_ex,
+  .lnb_web_outer {
+    background-color: #222;
+  }
+
+  /*  .visual_main {
+    width: 100%;
+    height: auto;
+    float: left;
+    order: -1;
+  }
+ */
+}

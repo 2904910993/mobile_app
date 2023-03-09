@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  /* -------- splash -------- */
+  .splash {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .splash video {
+    width: 100%;
+    height: auto;
+  }
+  

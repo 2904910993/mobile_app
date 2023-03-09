@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <title>LEE DAE HO</title>
+</head>
+
+
+
+<body>
+  <div class="header_ex">
+    <header class="header">
+      <input type="checkbox" id="lnb_chk">
+      <div class="label">
+        <label for="lnb_chk" class="open_lnb"><i class="fas fa-bars"></i></label>
+        <label for="lnb_chk" class="close_lnb"><i class="fas fa-bars"></i></label>
+        </label>
+      </div>
+      <ul class="lnb_ham_menu">
+        <a href="./profile.html">
+          <li>프로필</li>
+        </a>
+        <a href="./career.html">
+          <li>경력</li>
+        </a>
+        <a href="./reward.html">
+          <li>수상</li>
+        </a>
+        <a href="./gallery.html">
+          <li>갤러리</li>
+        </a>
+      </ul>
+      <a href="./main.html"><img src="./images/header_logo2.png" alt="header_logo"></a>
+      <!-- <h1>Dae-ho!</h1> -->
+    </header>
+  </div><!-- //header -->
+
+  <nav class="lnb_web_outer">
+    <ul class="lnb_web_menu">
+      <a href="./profile.html">
+        <li>프로필</li>
+      </a>
+      <a href="./career.html">
+        <li>경력</li>
+      </a>
+      <a href="./reward.html">
+        <li>수상</li>
+      </a>
+      <a href="./gallery.html">
+        <li>갤러리</li>
+      </a>
+    </ul>
+  </nav><!-- lnb_web_menu -->
+  <div class="wrap">
+    <div class="visual">
+      <section class="visual_main">
+        <div><img src="./images/visual_main01.jpg" alt="visual_main01"></div>
+        <div><img src="./images/visual_main02.jpg" alt="visual_main02"></div>
+        <div><img src="./images/visual_main03.jpg" alt="visual_main03"></div>
+        <div><img src="./images/visual_main04.jpg" alt="visual_main04"></div>
+        <div><img src="./images/visual_main05.jpg" alt="visual_main05"></div>
+      </section><!-- //visual_main -->
+    </div>
+
+    <div class="article_outer">
+      <section class="article">
+        <h1>ARTICLE</h1>
+        <div class="article01">
+          <div><img src="./images/article01.jpeg" alt="article01"></div>
+          <h3>이대호, 찰나의 하트 [SE★포토]</h3>
+          <p>2023.03.06.</p>
+          <a href="https://www.sedaily.com/NewsView/29MX865V3D/GL0701"><button>더보기</button></a>
+        </div>
+        <div class="article02">
+          <div>
+            <img src="./images/article02.jpeg" alt="article02">
+          </div>
+          <h3>찬호 vs 종범 vs 대호…3사 WBC 해설 전쟁</h3>
+          <p>2023.03.07.</p>
+          <a href="https://sports.donga.com/article/all/20230306/118200194/3"><button>더보기</button></a>
+        </div>
+        <div class="article03">
+          <div>
+            <img src="./images/article03.jpeg" alt="article03">
+          </div>
+          <h3>[비머inWBC ep.1] WBC 한국 우승 vs 롯데 자이언츠 우승, 이대호의 선택은?</h3>
+          <p>2023.03.03.</p>
+          <a href="https://n.news.naver.com/sports/kbaseball/article/055/0001039835"><button>더보기</button></a>
+        </div>
+      </section>
+    </div>
+    <div class="video_container">
+      <h1>video</h1>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l2_vAo0uFHc" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer_outer">
+    <footer class="footer">
+      <h4>copyright 2023. Jeongeunju All rights reserved.</h4>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.visual_main').slick({
+        /*  setting-name: setting-value */
+        autoplay: true,
+        autoplayspeed: 1000,
+        infinite: true,
+        prevArrow: false,
+        nextArrow: false
+      });
+    });
+  </script>
+</body>
+
+
+</html>
